@@ -1,0 +1,4 @@
+. @marodrigues20
+*.js @marodrigues20
+*.yml @marodrigues20
+/public/ @marodrigues20
