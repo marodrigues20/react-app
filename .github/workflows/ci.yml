@@ -61,7 +61,7 @@ jobs:
         run: npx surge --project ./build --domain bizarre-kettle.surge.sh
       - name: Upload Coverage Reports
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        run: npx codecov 
+        run: npx codecov
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Open Issue
