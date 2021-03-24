@@ -15,11 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-<<<<<<< Updated upstream
           Learn 123
-=======
-          Learn
->>>>>>> Stashed changes
         </a>
       </header>
     </div>
