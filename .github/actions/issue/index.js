@@ -20,6 +20,7 @@ async function run(){
             title,
             body,
             assignees: assignees ? assignees.split('\n') : undefined
+            
         });
 
         core.setOutput('issue', JSON.stringify(response.data));
