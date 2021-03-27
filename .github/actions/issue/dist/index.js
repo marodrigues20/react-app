@@ -3535,6 +3535,7 @@ exports.getState = getState;
 
 const core = __webpack_require__(470);
 const github = __webpack_require__(469);
+const { GitHub } = __webpack_require__(521);
 
 
 async function run(){
@@ -3545,7 +3546,7 @@ async function run(){
         const body = core.getInput('body');
         const assignees = core.getInput('assignees');
 
-        const octokit = new github.github(token);
+        const octokit = new GitHub(token);
 
         const response = await octokit.rest.issues.create({
             //owner: github.context.repo.owner,
