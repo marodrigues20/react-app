@@ -13,7 +13,7 @@ async function run(){
 
         const octokit = new GitHub(token);
 
-        const response = await octokit.rest.issues.create({
+        const response = await octokit.issues.create({
             //owner: github.context.repo.owner,
             //repo: github.context.repo.repo,
             ...github.context.repo,
@@ -23,7 +23,7 @@ async function run(){
             
         });
 
-        core.setOutput('issue', JSON.stringify(response.data));
+        core.setOutput("issue", JSON.stringify(response.data));
 
     }catch(error){
         core.setFailed(error.message);
