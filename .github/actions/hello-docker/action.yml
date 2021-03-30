@@ -12,7 +12,7 @@ outputs:
 runs:
   using: 'docker'
   #image: 'docker://dwdw:dwdw' # dockerhub image address
-  image: "dockerfile" # dockerfile from my local folder
+  image: "Dockerfile" # dockerfile from my local folder
   #entrypoint: 
   args:
     - ${{ inputs.who-to-greet }}
