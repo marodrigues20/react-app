@@ -13,8 +13,8 @@ jobs:
           body: Body
           assignees: |
             marodrigues20
-      - run: |
-          echo ${{ steps.issue.outputs.issue }}
+      #- run: |
+      #    echo ${{ steps.issue.outputs.issue }}
       #- uses: ./.github/actions/hello
       #  id: hello
       #  with:
