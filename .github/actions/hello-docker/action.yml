@@ -1,0 +1,20 @@
+name: Hello World
+author: Alexandre
+description: My First Git Action
+inputs:
+  who-to-greet:
+    description: 'Who to greet'
+    required: true
+    default: Alex
+outputs:
+  time:
+    description: 'The greeting time'
+runs:
+  using: 'docker'
+  #image: 'docker://dwdw:dwdw' # dockerhub image address
+  image: "dockerfile" # dockerfile from my local folder
+  #entrypoint: 
+  args:
+    - ${{ inputs.who-to-greet }}
+  #env:
+    #myvar: dwdw
